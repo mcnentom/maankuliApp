@@ -1,3 +1,47 @@
 <resources>
-    <string name="app_name">school project-1</string>
+    <string name="app_name">Food App</string>
+    <string name="AlreadyHaveAnAccount">Already have an account?</string>
+    <string name="Register">Register</string>
+    <string name="Username">Username</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="ConfirmPassword">Confirm password</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+
+    <string name="menu">Menu</string>
+    <string name="pizza">Pizza</string>
+    <string name="chicken">Chicken</string>
+    <string name="berger">Berger</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="coffee">Coffee</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="indian_tea">Indian Tea</string>
+
+    <string name="order_pizza">Order Pizza</string>
+    <string name="order_chicken">Order Chicken</string>
+    <string name="order_berger">Order Berger</string>
+    <string name="order_sandwich">Order Sandwich</string>
+    <string name="order_coffee">Order Coffee</string>
+    <string name="order_cocktail">Order Cocktail</string>
+    <string name="order_indian_tea">Order Indian Tea</string>
+
+    <string name="order">Order</string>
+    <string name="food_image_description">Image of the food item</string>
+    <string name="food_description_template">Description: This is a delicious %1$s</string>
+    <string name="food_name_template">Food: %1$s</string>
+    <string name="food_price_template">Price: %1$s</string>
+    <string name="order_success_message">Order placed successfully for %1$s!</string>
+    <string name="return_to_menu">Return to Menu</string>
+    <string name="on_order_message">Order Placed Successfully.Please wait as we prepare to deliver your order</string>
+
+    <string name="price_pizza">$10.00</string>
+    <string name="price_chicken">$8.00</string>
+    <string name="price_berger">$12.00</string>
+    <string name="price_sandwich">$6.00</string>
+    <string name="price_coffee">$3.00</string>
+    <string name="price_cocktail">$5.00</string>
+    <string name="price_indian_tea">$2.00</string>
+
+    <string name="no_data_found">No data found</string>
+    <string name="failed_to_load_data">Failed to load data</string>
 </resources>

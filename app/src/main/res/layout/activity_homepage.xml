@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/menuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/menu"
+            android:layout_gravity="center"
+            android:background="#2D8069"
+            android:textColor="#FFFFFF"
+            android:minWidth="48dp"
+            android:minHeight="48dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginTop="16dp"
+            android:alignmentMode="alignMargins"
+            android:padding="8dp"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:backgroundTint="#D3D3D3">
+
+            <!-- Food Item 1 -->
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pizza_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/pizza"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pizza"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_pizza"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/pizzaOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_pizza"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_pizza"/>
+
+            </LinearLayout>
+
+            <!-- Food Item 2 -->
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chicken_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/chicken"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chicken"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_chicken"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/chickenOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_chicken"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_chicken"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/berger_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/berger"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/berger"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_berger"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/bergerOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_berger"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_berger"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cocktail_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/cocktail"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cocktail"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_cocktail"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/cocktailOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_cocktail"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_cocktail"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/coffee_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/coffee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_coffee"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/coffeeOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_coffee"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_coffee"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sandwich_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/sandwich"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sandwich"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_sandwich"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/sandwichOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_sandwich"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_sandwich"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/indian_tea_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/indian_tea"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_tea"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_indian_tea"
+                    android:gravity="center"
+                    android:paddingTop="4dp"/>
+
+                <Button
+                    android:id="@+id/indianTeaOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_indian_tea"
+                    android:background="#9B2E2E"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:contentDescription="@string/order_indian_tea"/>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

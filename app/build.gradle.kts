@@ -1,13 +1,20 @@
+import com.android.build.gradle.internal.dsl.ViewBindingOptionsImpl
+
+fun buildFeatures(viewBinding: ViewBindingOptionsImpl, b: Boolean) {
+
+}
+
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
-    namespace = "com.example.schoolproject_1"
+    namespace = "com.dekut.projectactivity"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.schoolproject_1"
+        applicationId = "com.dekut.projectactivity"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -19,12 +26,18 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildFeatures{
+        viewBinding = true
     }
 }
 
@@ -34,6 +47,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
